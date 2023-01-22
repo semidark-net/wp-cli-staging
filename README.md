@@ -1,5 +1,5 @@
 # wp-cli-staging
-Scripts for managing Wordpress staging and development environment with wp-cli commands
+Bash scripts for managing Wordpress staging and development environment with wp-cli commands
 
 configuration is made via .env file
 
