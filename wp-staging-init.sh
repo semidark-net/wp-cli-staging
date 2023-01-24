@@ -76,7 +76,7 @@ wp db export --path=${DIR_PRODUCTION} - | wp db import --path=${DIR_STAGING} -
 
 ### Replace Domain in Database
 echo "INFO: replace all domain strings in database if staging"
-wp search-replace --report-changed-only ${DOM_PRODUCTION} ${DOM_STAGING} --path=${DIR_STAGING}
+wp search-replace --report-changed-only "://${DOM_PRODUCTION}" "://${DOM_STAGING}" --path=${DIR_STAGING}
 
 ### Clean all caches
 
